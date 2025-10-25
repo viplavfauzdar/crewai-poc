@@ -33,6 +33,9 @@ cp .env.example .env
 
 # 4) Run
 python main.py --topic "LLM observability best practices"
+
+# Or launch the Streamlit UI
+streamlit run streamlit_app.py
 ```
 
 The output artifacts are written to `./outputs/`.
@@ -94,6 +97,9 @@ Artifacts:
 
 ```bash
 python main.py --topic "Vector databases vs RAG over relational stores"
+
+# Interactive
+streamlit run streamlit_app.py
 ```
 
 ---
@@ -115,7 +121,7 @@ MIT
 
 ## 🖼️ Streamlit UI
 
-Run an interactive front-end:
+Run an interactive front-end (writes to `outputs/` just like the CLI):
 
 ```bash
 streamlit run streamlit_app.py
